@@ -1,7 +1,9 @@
+import UseStateComponent from "./components/UseStateComponent";
+
 function App() {
   return (
     <div>
-      App Component
+      <UseStateComponent />
     </div>
   );
 }
