@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 body{
-  @apply font-primary;
+  @apply bg-black font-primary;
 }

@@ -8,6 +8,17 @@ module.exports = {
       fontFamily: {
         primary: ['Open Sans', 'sans-serif'],
         secondary: ['Spectral', 'serif']
+      },
+      colors: {
+        primary: {
+          100: '#907163',
+          200: '#379683'
+        },
+        secondary: {
+          100: '#8EE4AF',
+          200: '#EDF5E1'
+        },
+        tertiary: '#5CDB95'
       }
     },
   },
