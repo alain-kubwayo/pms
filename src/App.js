@@ -4,13 +4,16 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import Wrapper from './layout/Wrapper';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Wrapper>
+        <Routes>
         
-      </Routes>
+        </Routes>
+      </Wrapper>
     </BrowserRouter>
   );
 }
