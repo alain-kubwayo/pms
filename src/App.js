@@ -7,11 +7,12 @@ import UseStateComponent from "./components/UseStateComponent";
 import { ThemeProvider } from "./ThemeContext";
 import { AuthProvider } from "./AuthContext";
 import UseMemoComponent from "./components/UseMemoComponent";
+import UseCallbackComponent from "./components/UseCallbackComponent";
 
 function App() {
   return (
     <div>
-      <UseStateComponent />
+      {/* <UseStateComponent />
       <UseEffectComponent />
       <ThemeProvider>
         <UseContextComponent />
@@ -20,7 +21,8 @@ function App() {
         <UseContextPractice />
       </AuthProvider>
       <UseRefComponent />
-      <UseMemoComponent />
+      <UseMemoComponent /> */}
+      <UseCallbackComponent />
     </div>
   );
 }
