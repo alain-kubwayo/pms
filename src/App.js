@@ -6,6 +6,7 @@ import UseStateComponent from "./components/UseStateComponent";
 
 import { ThemeProvider } from "./ThemeContext";
 import { AuthProvider } from "./AuthContext";
+import UseMemoComponent from "./components/UseMemoComponent";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <UseContextPractice />
       </AuthProvider>
       <UseRefComponent />
+      <UseMemoComponent />
     </div>
   );
 }
