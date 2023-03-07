@@ -8,6 +8,8 @@ import { ThemeProvider } from "./ThemeContext";
 import { AuthProvider } from "./AuthContext";
 import UseMemoComponent from "./components/UseMemoComponent";
 import UseCallbackComponent from "./components/UseCallbackComponent";
+import UseReducerComponent from "./components/UseReducerComponent";
+import Todos from "./components/Todos";
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
       </AuthProvider>
       <UseRefComponent />
       <UseMemoComponent /> */}
-      <UseCallbackComponent />
+      {/* <UseCallbackComponent /> */}
+      <UseReducerComponent />
+      <hr />
+      <Todos />
     </div>
   );
 }
