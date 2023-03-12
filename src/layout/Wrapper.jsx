@@ -1,7 +1,9 @@
-const Wrapper = ({ children }) => {
+const Wrapper = ({ children, className="p-4 md:p-8 lg:p-16" }) => {
     return ( 
-        <div className="p-4 md:p-8 lg:p-16 max-w-7xl mx-auto">{ children }</div>
+        <div className={`max-w-7xl mx-auto ${className}`}>{ children }</div>
     );
 }
  
 export default Wrapper;
+
+// p-4 md:p-8 lg:p-16 
