@@ -4,15 +4,15 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Wrapper from './layout/Wrapper';
-import Home from './pages/home/Home';
+
+import WelcomePage from './pages/WelcomePage'
 
 const App = () => {
   return (
     <BrowserRouter>
       
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<WelcomePage />} />
         </Routes>
       
     </BrowserRouter>

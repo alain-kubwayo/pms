@@ -1,6 +1,6 @@
-import Wrapper from "../../layout/Wrapper";
+import Wrapper from "../components/layout/Wrapper";
 
-const Home = () => {
+const WelcomePage = () => {
     return ( 
         <Wrapper className="flex items-center justify-center w-screen h-screen">
             <div className="grid w-4/5 grid-cols-1 sm:grid-cols-2 sm:gap-x-16">
@@ -55,4 +55,4 @@ const Home = () => {
     );
 }
  
-export default Home;
+export default WelcomePage;
