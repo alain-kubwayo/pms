@@ -1,6 +1,11 @@
+import LoginForm from "../components/auth/LoginForm";
+import RegisterForm from "../components/auth/RegisterForm";
+import DefaultButton from "../components/common/DefaultButton";
+import Heading from "../components/common/Heading";
+
 const WelcomePage = () => {
     return ( 
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid items-center justify-center grid-cols-1 sm:grid-cols-2 gap-x-40 grid-rows-[100vh]">
             <div>
                 <h1 className="mb-4 text-4xl font-extrabold text-tertiary">PMS</h1>
                 <div className="text-lg text-tertiary space-y-7">
@@ -14,37 +19,36 @@ const WelcomePage = () => {
                     </ul>
                 </div>
             </div>
-            <div>
-                <h2 className="mb-4 text-2xl font-bold uppercase text-tertiary font-secondary">Let's get you started!</h2>
+            <div className="w-2/3">
+                <Heading
+                    description="Let's get you started!"
+                    customClasses="mb-4 text-2xl font-bold uppercase text-tertiary font-secondary" 
+                />
                 <div className="flex items-center pb-4 border-b border-gray-700 gap-x-6">
                     <span className="text-gray-400">Continue with: </span>
                     <div className="space-x-4">
-                        <button className="px-2 py-2 duration-500 border border-tertiary text-tertiary hover:rounded-3xl">Google</button>
-                        <button className="px-2 py-2 duration-500 border border-tertiary text-tertiary hover:rounded-3xl">LinkedIn</button>
+                        <DefaultButton 
+                            description="Google" 
+                            customClasses="hover:text-black hover:bg-tertiary duration-500 rounded-md border border-tertiary"
+                        />
+                        <DefaultButton 
+                            description="LinkedIn" 
+                            customClasses="hover:text-black hover:bg-tertiary duration-500 rounded-md border border-tertiary"
+                        />
                     </div>
                 </div>
                 <div className="mt-8">
-                    <button className="w-1/2 px-2 py-2 text-black duration-500 border border-tertiary rounded-l-3xl bg-tertiary">Login</button>
-                    <button className="w-1/2 px-2 py-2 duration-500 border border-tertiary text-tertiary rounded-r-3xl">Register</button>
+                    <DefaultButton 
+                        description="Login" 
+                        customClasses="w-1/2 rounded-l-md active border border-tertiary"
+                    />
+                    <DefaultButton 
+                        description="Register" 
+                        customClasses="w-1/2 rounded-r-md border border-tertiary"
+                    />
                 </div>
-                <form className="text-lg">
-                <input 
-                    type="text" 
-                    placeholder="Username" 
-                    className="w-full px-2 py-2 mb-4 text-white bg-transparent border-b outline-none border-tertiary"
-                />
-                <input 
-                    type="password" 
-                    placeholder="Password" 
-                    className="w-full px-2 py-2 mb-4 text-white bg-transparent border-b outline-none border-tertiary"
-                />
-                <input 
-                    type="password" 
-                    placeholder="Confirm Password" 
-                    className="w-full px-2 py-2 mb-4 text-white bg-transparent border-b outline-none border-tertiary"
-                />
-                <button className="px-2 py-2 border-b border-tertiary text-tertiary">Get In</button>
-            </form>
+                <LoginForm />
+                {/* <RegisterForm /> */}
             </div>
             
         </div>
