@@ -19,7 +19,7 @@ const WelcomePage = () => {
                     </ul>
                 </div>
             </div>
-            <div className="w-2/3">
+            <div>
                 <Heading
                     description="Let's get you started!"
                     customClasses="mb-4 text-2xl font-bold uppercase text-tertiary font-secondary" 
