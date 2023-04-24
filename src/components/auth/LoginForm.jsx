@@ -3,7 +3,7 @@ import InputField from "../common/InputField";
 
 const LoginForm = () => {
     return ( 
-        <form className="mt-4 text-lg">
+        <form className="mt-12 text-lg">
             <InputField 
                 type="text"
                 placeholder="Username"
