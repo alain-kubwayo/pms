@@ -3,7 +3,7 @@ import RegisterForm from "../components/auth/RegisterForm";
 import DefaultButton from "../components/common/DefaultButton";
 import Heading from "../components/common/Heading";
 
-const WelcomePage = () => {
+const Welcome = () => {
     return ( 
         <div className="grid items-center justify-center grid-cols-1 sm:grid-cols-2 gap-x-40 grid-rows-[100vh]">
             <div>
@@ -55,4 +55,4 @@ const WelcomePage = () => {
     );
 }
  
-export default WelcomePage;
+export default Welcome;
