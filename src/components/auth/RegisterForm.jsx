@@ -18,7 +18,7 @@ const RegisterForm = () => {
             />
             <DefaultButton
                 description="Get In"
-                customClasses="border-b !border-tertiary hover:bg-tertiary hover:text-black hover:rounded-md"
+                customClasses="self-center lg:self-start border-b !border-tertiary hover:bg-tertiary hover:text-black hover:rounded-md"
             />
         </form>
     );

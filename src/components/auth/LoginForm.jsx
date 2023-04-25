@@ -3,7 +3,7 @@ import InputField from "../common/InputField";
 
 const LoginForm = () => {
     return ( 
-        <form className="mt-12 text-lg">
+        <form className="flex flex-col mt-12 text-lg">
             <InputField 
                 type="text"
                 placeholder="Username"
@@ -14,7 +14,7 @@ const LoginForm = () => {
             />
             <DefaultButton
                 description="Get In"
-                customClasses="border-b !border-tertiary hover:bg-tertiary hover:text-black hover:rounded-md"
+                customClasses="self-center lg:self-start lg:mx-none border-b !border-tertiary hover:bg-tertiary hover:text-black hover:rounded-md"
             />
         </form>
     );
