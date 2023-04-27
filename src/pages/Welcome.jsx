@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import LoginForm from "../components/auth/LoginForm";
 import RegisterForm from "../components/auth/RegisterForm";
 import DefaultButton from "../components/common/DefaultButton";
@@ -5,8 +7,13 @@ import Heading from "../components/common/Heading";
 import Description from "../components/welcome/Description";
 
 const Welcome = () => {
+    const [activeTab, setActiveTab] = useState("login");
+
+    const handleLoginButtonClick = () => setActiveTab("login");
+    const handleRegisterButtonClick = () => setActiveTab("register");
+    
     return ( 
-        <div className="grid items-center justify-center w-full grid-cols-1 py-10 mx-auto lg:h-screen lg:py-0 md:w-4/5 gap-y-10 lg:grid-cols-2 md:gap-x-20">
+        <div className="grid items-center w-full grid-cols-1 py-10 mx-auto lg:items-start lg:pt-40 lg:h-screen lg:py-0 md:w-4/5 gap-y-10 lg:grid-cols-2 md:gap-x-20">
             <Description />
             <div>
                 <Heading
@@ -27,17 +34,24 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className="mt-8">
-                    <DefaultButton 
-                        description="Login" 
-                        customClasses="w-1/2 rounded-l-md active border border-tertiary"
-                    />
-                    <DefaultButton 
-                        description="Register" 
-                        customClasses="w-1/2 rounded-r-md border border-tertiary"
-                    />
+                    <div>
+                        <button 
+                            className={`px-2 py-2 text-tertiary w-1/2 rounded-l-md border border-tertiary ${activeTab === 'login' ? 'active' : ''}`}
+                            onClick={handleLoginButtonClick}
+                        >
+                            Login
+                        </button>
+                        <button 
+                            className={`px-2 py-2 text-tertiary w-1/2 rounded-r-md border border-tertiary ${activeTab === 'register' ? 'active' : ''}`}
+                            onClick={handleRegisterButtonClick}
+                        >
+                            Register 
+                        </button>
+                    </div>
+                    <div>
+                        {activeTab === "login" ? <LoginForm /> : <RegisterForm />}
+                    </div>
                 </div>
-                <LoginForm />
-                {/* <RegisterForm /> */}
             </div>
             
         </div>
