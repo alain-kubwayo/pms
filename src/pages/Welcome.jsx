@@ -5,7 +5,6 @@ import RegisterForm from "../components/auth/RegisterForm";
 import DefaultButton from "../components/common/DefaultButton";
 import Heading from "../components/common/Heading";
 import Description from "../components/welcome/Description";
-import Particle from "../components/welcome/Particle";
 
 const Welcome = () => {
     const [activeTab, setActiveTab] = useState("login");
@@ -14,8 +13,7 @@ const Welcome = () => {
     const handleRegisterButtonClick = () => setActiveTab("register");
     
     return ( 
-        <>
-            <Particle />
+        <> 
             <div className="z-40 grid items-center w-full grid-cols-1 py-10 mx-auto text-white lg:items-start lg:pt-40 lg:h-screen lg:py-0 md:w-4/5 gap-y-10 lg:grid-cols-2 md:gap-x-20">
                 <Description />
                 <div>
@@ -56,7 +54,6 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-                
             </div>
         </>
     );
