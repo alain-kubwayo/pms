@@ -13,7 +13,7 @@ const Welcome = () => {
     const handleRegisterButtonClick = () => setActiveTab("register");
     
     return ( 
-        <div className="z-40 grid items-center w-full grid-cols-1 py-10 mx-auto text-white lg:items-center lg:pt-40 lg:h-screen md:w-4/5 gap-y-10 lg:grid-cols-2 md:gap-x-20">
+        <div className="grid items-center w-full grid-cols-1 py-10 mx-auto text-white lg:items-center lg:pt-40 lg:h-screen md:w-4/5 gap-y-10 lg:grid-cols-2 md:gap-x-20">
             <Description />
             <div>
                 <Heading
