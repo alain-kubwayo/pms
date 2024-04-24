@@ -6,3 +6,8 @@ With this PMS, you can ship projects in time by efficiently managing one or more
 
 * Tracking individual progress
 * Tracking teams progress
+
+## Technologies
+
+* React
+* TailwindCSS
